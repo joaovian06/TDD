@@ -1,5 +1,7 @@
 # IMPLEMENTACAO
 class Multiples
+  def sum_multiples
+  end
 end
 
 # TESTES
