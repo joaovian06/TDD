@@ -1,3 +1,8 @@
+# IMPLEMENTACAO
+class Multiples
+end
+
+# TESTES
 mult = Multiples.new
 
 # teste de sucesso
