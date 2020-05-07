@@ -1,6 +1,6 @@
 # IMPLEMENTACAO
 class Multiples
-  def sum_multiples
+  def sum_multiples(num_1, num_2, limit)
   end
 end
 
