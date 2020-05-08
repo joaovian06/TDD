@@ -23,3 +23,5 @@ puts mult.find_sum_multiples(3, 4, 10) != 23
 # dado um limite(16) e dois numeros naturais(3 e 5) quero que a soma dos multiplos seja 60
 puts mult.find_sum_multiples(3, 5, 16) == 60
 
+# dado um limite(1000) e dois numeros naturais(3 e 5) quero que a soma dos multiplos seja 233168
+puts mult.find_sum_multiples(3, 5, 1000) == 233168
