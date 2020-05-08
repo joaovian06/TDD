@@ -2,7 +2,8 @@
 class Multiples
   def find_sum_multiples(num_1, num_2, limit)
     (1...limit).each do |check|
-      print check
+      check if check % num_1 == 0
+      check if check % num_2 == 0
     end
   end
 end
