@@ -8,4 +8,3 @@ describe 'soma-multiplos' do
     end
   end
 end
-
