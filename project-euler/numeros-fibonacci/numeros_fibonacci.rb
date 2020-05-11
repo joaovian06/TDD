@@ -1,2 +1,2 @@
-class Fibonacci
+class Fibonacci(len)
 end
