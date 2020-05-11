@@ -1,5 +1,5 @@
 # IMPLEMENTACAO
-# class Multiple
+class Multiple
 #   def find_sum_multiples(a, b, limit)
 #     sum = 0
 #     (1...limit).each do |num|
@@ -7,7 +7,7 @@
 #     end
 #     sum
 #   end
-# end
+end
 
 # # TESTES
 # mult = Multiples.new
