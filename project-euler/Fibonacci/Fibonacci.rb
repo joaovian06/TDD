@@ -22,7 +22,6 @@ class Fibonacci
     @even_valued
   end
   def sum_even_valued
-    find_even_valued
-    # soma valores pares retornado do find_even_valued
+    find_even_valued.sum
   end
 end
