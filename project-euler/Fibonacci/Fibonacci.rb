@@ -2,11 +2,17 @@
 
 class Fibonacci
   def initialize(limit)
-    @fibonacci_nums = Array.new
+    @fibonacci_nums = [1]
     @limit = limit
   end
   def generate
-    # nao pode ser maior que 89(limit)
+    ind = 0
+    while @fibonacci_nums.at(-1) < @limit
+      next_fib = @fibonacci_nums[ind] + @fibonacci_nums[ind - 1]
+      @fibonacci_nums << next_fib
+      ind += 1
+    end
+    @fibonacci_nums
   end
   def find_even_valued
     generate
@@ -14,6 +20,7 @@ class Fibonacci
     # retorna um array com os pares
   end
   def sum_even_valued
-    # soma valores pares retornado do finc_even_valued
+    find_even_valued
+    # soma valores pares retornado do find_even_valued
   end
 end
