@@ -15,9 +15,11 @@ class Fibonacci
     @fibonacci_nums
   end
   def find_even_valued
-    generate
-    # achar os valores pares dentro do meu array
-    # retorna um array com os pares
+    @even_valued = []
+    generate.each do |num|
+      @even_valued << num if num % 2 == 0
+    end
+    @even_valued
   end
   def sum_even_valued
     find_even_valued
