@@ -4,12 +4,12 @@
 
 # By considering the terms in the Fibonacci sequence whose values do not exceed four million, find the sum of the even-valued terms.
 
-require '../Fibonacci'
+require '../numeros_fibonacci'
 
 describe 'Fibonacci' do
   describe 'generate' do
-    context 'given a limit passed by the the class instance' do
-      it 'the last value of the fibonacci sequence it will be the limit' do
+    context 'dado um limite passado pela instancia da minha classe' do
+      it 'quero que o ultimo valor gerado na sequencia de fibonacci seja igual ao limite' do
         fibonacci = Fibonacci.new(89)
         expect(fibonacci.generate).to eq [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
       end
@@ -24,8 +24,8 @@ describe 'Fibonacci' do
     end
   end
   describe 'sum_even_valued' do
-    context 'given even-valued returned from the fibonacci sequence' do
-      it 'want the sum of these values'do
+    context 'dado os valores pares retornados da sequencia de fibonacci' do
+      it 'quero a soma desses valores'do
         fibonacci = Fibonacci.new(89)
         expect(fibonacci.sum_even_valued).to eq 44
       end
