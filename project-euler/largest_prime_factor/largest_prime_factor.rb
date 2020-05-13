@@ -1,2 +1,2 @@
-def get_primes
+def get_primes(number)
 end
