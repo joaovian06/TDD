@@ -9,8 +9,8 @@ require '../Fibonacci'
 describe 'Fibonacci' do
   describe 'generate' do
     context 'given a limit passed by the the class instance' do
-      it 'the last value of the fibonacci sequence it will be the limit' do
-        fibonacci = Fibonacci.new(89)
+      it 'the last value of the fibonacci sequence it will be 89' do
+        fibonacci = Fibonacci.new(90)
         expect(fibonacci.generate).to eq [1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
       end
     end
@@ -18,7 +18,7 @@ describe 'Fibonacci' do
   describe 'find_even_valued' do
     context 'when passed values of Fibonacci sequence whose value do not exceed 10 first values' do
       it 'find even-valued terms' do
-        fibonacci = Fibonacci.new(89)
+        fibonacci = Fibonacci.new(90)
         expect(fibonacci.find_even_valued).to eq [2, 8, 34]
       end
     end
@@ -26,7 +26,7 @@ describe 'Fibonacci' do
   describe 'sum_even_valued' do
     context 'given even-valued returned from the fibonacci sequence' do
       it 'want the sum of these values'do
-        fibonacci = Fibonacci.new(89)
+        fibonacci = Fibonacci.new(90)
         expect(fibonacci.sum_even_valued).to eq 44
       end
     end
