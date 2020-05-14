@@ -6,4 +6,6 @@ class LargestPrimeFactor
       primes << num
     end
   end
+  def get_factors
+  end
 end
