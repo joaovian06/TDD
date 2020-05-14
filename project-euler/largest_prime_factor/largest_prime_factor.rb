@@ -1,6 +1,7 @@
-def get_primes(number)
-  all_primes = []
-  all_nums = []
-  2.upto(number) {|num| all_nums << num}
-  all_primes
+class LargestPrimeFactor
+  def get_primes(number)
+    all_primes = []
+    my_number = number
+
+  end
 end
