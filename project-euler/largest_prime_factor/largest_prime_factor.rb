@@ -1,4 +1,4 @@
-require 'prime'
+require 'Prime'
 class LargestPrimeFactor
   def get_primes(limit)
     primes = []
