@@ -14,13 +14,13 @@ describe 'Largest prime factor' do
         expect(my_prime_factor.get_factors(30,return_primes)).to eq [2,3,5]
       end
     end
-    # describe 'greatest_factor' do
-    #   it 'given a array is expected a return containing the greatest value' do
-    #     my_prime_factor = LargestPrimeFactor.new
-    #     return_primes = my_prime_factor.get_primes(30)
-    #     return_factor = my_prime_factor.get_factors(30,return_primes)
-    #     expect(my_prime_factor.greatest_factor(return_factor)).to eq 5
-    #   end
-    # end
+    describe 'greatest_factor' do
+      it 'given a array is expected a return containing the greatest value' do
+        my_prime_factor = LargestPrimeFactor.new
+        return_primes = my_prime_factor.get_primes(30)
+        return_factor = my_prime_factor.get_factors(30,return_primes)
+        expect(my_prime_factor.greatest_factor(return_factor)).to eq 5
+      end
+    end
   end
 end
