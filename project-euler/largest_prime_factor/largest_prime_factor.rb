@@ -21,5 +21,7 @@ class LargestPrimeFactor
     factor
   end
   def greatest_factor(factor_array)
+    factored_array = factor_array.sort!
+    factored_array.at(-1)
   end
 end
