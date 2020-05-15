@@ -1,17 +1,16 @@
 require 'Prime'
 class LargestPrimeFactor
-  attr_reader :primes
-  def get_primes(limit)
+  def get_primes(primes_limit)
     primes = []
-    Prime.each(limit) do |num|
+    Prime.each(primes_limit) do |num|
       primes << num
     end
   end
 
-  def get_factors(limit, my_array)
+  def get_factors(to_be_factored, primes_array)
     factor = []
-    factored = limit
-    my_array.each do |num|
+    factored = to_be_factored
+    primes_array.each do |num|
       if factored % num == 0
         factored = factored / num
         factor << num
@@ -21,6 +20,6 @@ class LargestPrimeFactor
     end
     factor
   end
-  def greatest_factor
+  def greatest_factor(factor_array)
   end
 end
