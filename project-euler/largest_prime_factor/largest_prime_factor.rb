@@ -21,6 +21,6 @@ class LargestPrimeFactor
     end
     factor
   end
-  # def greatest_factor
-  # end
+  def greatest_factor
+  end
 end
