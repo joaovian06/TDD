@@ -6,6 +6,10 @@ describe 'String Calculator' do
         string_calc = StringCalculator.new
         expect(string_calc.add_string('')).to eq 0
       end
+      it 'give a string containing a single value, return must be equal to the value' do
+        string_calc = StringCalculator.new
+        expect(string_calc.add_string('1')).to eq 1
+      end
     end
   end
 end
