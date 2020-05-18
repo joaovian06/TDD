@@ -2,7 +2,7 @@ require '../largest_prime_factor'
 describe 'Largest prime factor' do
   context 'given a value' do
     describe 'get_primes' do
-      it 'is expected a return containing all prime values ​​within the given value' do
+      fit 'is expected a return containing all prime values ​​within the given value' do
         my_prime_factor = LargestPrimeFactor.new
         expect(my_prime_factor.get_primes(30)).to eq [2,3,5,7,11,13,17,19,23,29]
       end
@@ -22,10 +22,10 @@ describe 'Largest prime factor' do
         expect(my_prime_factor.greatest_factor(return_factor)).to eq 5
       end
     end
-    describe 'greatest_prime_factor' do
+    describe 'first_prime_factor' do
       it 'is expected a return containing the greatest prime factor for this value' do
         my_prime_factor = LargestPrimeFactor.new
-        expect(my_prime_factor.greatest_prime_factor(30)).to eq 5
+        expect(my_prime_factor.first_prime_factor(30)).to eq 5
       end
     end
   end
