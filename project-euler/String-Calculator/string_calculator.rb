@@ -1,4 +1,4 @@
 class StringCalculator
-  def add_string
+  def add_string(my_string)
   end
 end
