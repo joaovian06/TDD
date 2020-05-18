@@ -22,5 +22,11 @@ describe 'Largest prime factor' do
         expect(my_prime_factor.greatest_factor(return_factor)).to eq 5
       end
     end
+    describe 'greatest_prime_factor' do
+      it 'is expected a return containing the greatest prime factor for this value' do
+        my_prime_factor = LargestPrimeFactor.new
+        expect(my_prime_factor.greatest_prime_factor(30)).to eq 5
+      end
+    end
   end
 end
