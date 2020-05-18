@@ -3,8 +3,6 @@ class StringCalculator
     return 0 if my_string.empty?
     return my_string.to_i unless my_string.include? ','
 
-    if my_string.include? ','
-      my_string.split(',').map! { |string_num| string_num.to_i }.sum
-    end
+    my_string.split(',').map!(&:to_i).sum if my_string.include? ','
   end
 end
