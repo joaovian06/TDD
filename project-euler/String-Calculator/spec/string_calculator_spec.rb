@@ -10,7 +10,7 @@ describe 'String Calculator' do
         string_calc = StringCalculator.new
         expect(string_calc.add('1')).to eq 1
       end
-      it 'given a string containing tow values, return must be equal the sum of these values ' do
+      it 'given a string containing two values, return must be equal the sum of these values ' do
         string_calc = StringCalculator.new
         expect(string_calc.add('1,2')).to eq 3
       end
