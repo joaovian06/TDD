@@ -3,6 +3,7 @@
     - built in matchers
     - `expect().to` and `expect().not_to`
 ---
+
 ## Comparison Matchers
 ```ruby
   it '#equal' do
@@ -130,9 +131,23 @@
 ```
 ---
 
-## Alias Matchers
-  - alias to start_with
-  - a_string_starting_with / starting_with
+## Predicated Matchers
+```ruby
+  it '#be_odd' do
+    expect(1).to be_odd
+  end
 
-  - alias to be
-  - a_value
+  it '#be_even' do
+    expect(2).to be_even
+  end
+
+  # work with every predicated method from ruby
+```
+---
+
+## Alias Matchers
+  - alias to `start_with`
+  - `a_string_starting_with` / `starting_with`
+
+  - alias to `be`
+  - `a_value`
