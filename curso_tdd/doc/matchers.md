@@ -162,7 +162,7 @@
 
 ## Alias Matchers
   - alias to `start_with`
-    `a_string_starting_with` / `starting_with`
+    - `a_string_starting_with` / `starting_with`
 
   - alias to `be`
-    `a_value`
+    - `a_value`
