@@ -2,7 +2,7 @@
   - `gem rspec-expectations`
     - built in matchers
     - `expect().to` and `expect().not_to`
-
+---
 ## Comparison Matchers
 ```ruby
   it '#equal' do
@@ -88,6 +88,7 @@
     expect([1, 2, 3]).to end_with(3)
   end
 ```
+---
 
 ## Class and Type Matchers
 ```ruby
@@ -113,3 +114,25 @@
     expect(str).to be_a(StringNaoVazia)
   end
 ```
+---
+
+## Class attributes Matchers
+```ruby
+  it '#have_attributes' do
+    person = Person.new
+    person.name = 'Jackson'
+    person.age = 10
+
+    expect(person).to have_attributes(:name, :age)
+    expect(person).to have_attributes(name: 'Jackson', age: 10)
+    expect(person).to have_attributes(name: starting_with('J'), age: (be >= 5))
+  end
+```
+---
+
+## Alias Matchers
+  - alias to start_with
+  - a_string_starting_with / starting_with
+
+  - alias to be
+  - a_value
