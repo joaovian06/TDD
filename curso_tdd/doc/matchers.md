@@ -160,6 +160,24 @@
 ```
 ---
 
+## Array Matchers
+```ruby
+  it '#include' do
+    expect(subject).to include(2)
+    expect(subject).to include(2, 1)
+  end
+
+  it '#match_array' do
+    expect(subject).to match_array([1, 2])
+  end
+
+  it '#contain_exactly' do
+    expect(subject).to contain_exactly(1, 2)
+    # nao permite usar o array ([1, 2]) -> (1, 2) * nao ordenado
+  end
+```
+---
+
 ## Alias Matchers
   - alias to `start_with`
     - `a_string_starting_with` / `starting_with`
@@ -169,3 +187,6 @@
 
   - alias to `be_a`
     - `be_an`
+
+  - alias to 'contain_exactly'
+    - `match_array`
