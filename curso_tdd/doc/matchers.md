@@ -166,3 +166,6 @@
 
   - alias to `be`
     - `a_value`
+
+  - alias to `be_a`
+    - `be_an`
