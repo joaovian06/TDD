@@ -145,6 +145,21 @@
 ```
 ---
 
+## Errors Matchers
+```ruby
+  it '#raise_exception' do
+    expect { 3 / 0 }.to raise_exception
+  end
+
+  it '#raise_error' do
+    expect { 3 / 0 }.to raise_error(ZeroDivisionError)
+    expect { 3 / 0 }.to raise_error('divided by 0')
+    expect { 3 / 0 }.to raise_error(ZeroDivisionError, 'divided by 0')
+    expect { 3 / 0 }.to raise_error(/divided/)
+  end
+```
+---
+
 ## Alias Matchers
   - alias to `start_with`
   - `a_string_starting_with` / `starting_with`
