@@ -88,3 +88,28 @@
     expect([1, 2, 3]).to end_with(3)
   end
 ```
+
+## Class and Type Matchers
+```ruby
+  it '#be_instance_of' do
+    expect(10).to be_instance_of(Integer)
+    # exactly the class
+  end
+
+  it '#be_kind_of' do
+    expect(10).to be_kind_of(Integer)
+    # can be inheritance
+  end
+
+  it '#respond_to' do
+    expect('ruby'.to respond_to(:size))
+    expect('ruby'.to respond_to(:count))
+    # expect an object to respond to given method
+  end
+
+  it '#be_a / #be_an' do
+    str = StringNaoVazia.new
+    expect(str).to be_a(String)
+    expect(str).to be_a(StringNaoVazia)
+  end
+```
