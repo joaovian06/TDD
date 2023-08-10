@@ -178,6 +178,15 @@
 ```
 ---
 
+## Range Matcher
+```ruby
+  it '#cover' do
+    expect(subject).to cover(2)
+    expect(subject).to cover(2, 5)
+  end
+```
+---
+
 ## Alias Matchers
   - alias to `start_with`
     - `a_string_starting_with` / `starting_with`
