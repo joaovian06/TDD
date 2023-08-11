@@ -208,6 +208,19 @@ end
 ```
 ---
 
+## Satisfy
+```ruby
+describe '#satisfy' do
+  it { expect(10).to satisfy { |x| x % 2 == 0 } }
+  it "be a multiple of 3" do
+    expect(9).to satisfy("be a multiple of 3") do |x|
+      x % 3 == 0
+    end
+  end
+end
+```
+---
+
 ## Alias Matchers
   - alias to `start_with`
     - `a_string_starting_with` / `starting_with`
