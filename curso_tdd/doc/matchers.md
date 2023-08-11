@@ -187,6 +187,14 @@
 ```
 ---
 
+## Collection Matcher
+```ruby
+describe [1, 7, 9] do
+  it { is_expected.to all (be_odd).and be_an(Integer) }
+end
+```
+---
+
 ## Alias Matchers
   - alias to `start_with`
     - `a_string_starting_with` / `starting_with`
