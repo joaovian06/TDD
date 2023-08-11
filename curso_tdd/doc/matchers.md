@@ -195,6 +195,19 @@ end
 ```
 ---
 
+## Be Within
+```ruby
+describe '#be_within' do
+  it { expect(12.5).to be_within(0.5).of(12) }
+  it { expect([11.6, 12.1, 12.4]).to all be_within(0.5).of(12) }
+end
+
+# checks if condition is in a defined range of given number
+# delta 0.5
+# 11.5 - 11.6 - 11.7 - 11.8 - 11.9 - 12 - 12.1 - 12.2 - 12.3 - 12.4 - 12.5
+```
+---
+
 ## Alias Matchers
   - alias to `start_with`
     - `a_string_starting_with` / `starting_with`
