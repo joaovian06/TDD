@@ -4,7 +4,7 @@
     - `expect().to` and `expect().not_to`
 ---
 
-## Comparison Matchers
+## #Comparison Matchers
 ```ruby
   it '#equal' do
     x = "ruby"
@@ -91,7 +91,7 @@
 ```
 ---
 
-## Class and Type Matchers
+## #Class and Type Matchers
 ```ruby
   it '#be_instance_of' do
     expect(10).to be_instance_of(Integer)
@@ -117,7 +117,7 @@
 ```
 ---
 
-## Class attributes Matchers
+## #Class attributes Matchers
 ```ruby
   it '#have_attributes' do
     person = Person.new
@@ -131,7 +131,7 @@
 ```
 ---
 
-## Predicated Matchers
+## #Predicated Matchers
 ```ruby
   it '#be_odd' do
     expect(1).to be_odd
@@ -145,7 +145,7 @@
 ```
 ---
 
-## Errors Matchers
+## #Errors Matchers
 ```ruby
   it '#raise_exception' do
     expect { 3 / 0 }.to raise_exception
@@ -160,7 +160,7 @@
 ```
 ---
 
-## Array Matchers
+## #Array Matchers
 ```ruby
   it '#include' do
     expect(subject).to include(2)
@@ -178,7 +178,7 @@
 ```
 ---
 
-## Range Matcher
+## #Range Matcher
 ```ruby
   it '#cover' do
     expect(subject).to cover(2)
@@ -187,7 +187,7 @@
 ```
 ---
 
-## Collection Matcher
+## #Collection Matcher
 ```ruby
 describe [1, 7, 9] do
   it { is_expected.to all (be_odd).and be_an(Integer) }
@@ -195,7 +195,7 @@ end
 ```
 ---
 
-## Be Within
+## #Be Within
 ```ruby
 describe '#be_within' do
   it { expect(12.5).to be_within(0.5).of(12) }
@@ -208,7 +208,7 @@ end
 ```
 ---
 
-## Satisfy
+## #Satisfy
 ```ruby
 describe '#satisfy' do
   it { expect(10).to satisfy { |x| x % 2 == 0 } }
@@ -221,7 +221,7 @@ end
 ```
 ---
 
-## Alias Matchers
+## #Alias Matchers
   - alias to `start_with`
     - `a_string_starting_with` / `starting_with`
 
