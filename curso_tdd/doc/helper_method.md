@@ -8,7 +8,6 @@ RSpec.configure do |config|
 end
 
 # spec/helper_methods/helper
-
 module Helper
   def fruta
     %w(banana laranja uva).sample
@@ -16,7 +15,6 @@ module Helper
 end
 
 # spec
-
 describe 'helper example' do
   it { expect(fruta).to eq('banana').or eq('laranja').or eq('uva') }
 end
